@@ -21,6 +21,13 @@ for (let i = 1; i <= 100; i++) {
         h3.textContent = ("Fizz");
 
     }
+    if (i % 5 === 0) {
+
+    }
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        h3.textContent = ("FizzBuzz");
+
+    }
 
 
 
