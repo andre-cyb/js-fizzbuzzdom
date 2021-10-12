@@ -10,6 +10,12 @@
     background-color: #083b4c;
 
 }
+.blue{
+    background-color: #1389b2;
+}
+
+
+
 h1{
     font-size: 100px;
     font-weight: 700;
@@ -17,3 +23,13 @@ h1{
 h3{
     font-size: 30px;
 }
+
+
+/* .middle-text{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
