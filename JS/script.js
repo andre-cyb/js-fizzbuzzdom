@@ -3,39 +3,42 @@ const row = document.createElement("div");
 for (let i = 1; i <= 100; i++) {
 
     let box = document.querySelector(".box");
+
+    //    CREATI ELEMENTI IN HTML
     const col = document.createElement("div");
     const h3 = document.createElement("h3");
+    const flexbox = document.createElement("div");
 
     h3.textContent = i;
-    col.classList.add("col-7", "ratio", "ratio-1x1", "my_border", "blue", /* "d-flex", "justify-content-center", "align-items-middle" */);
-    row.classList.add("row");
 
-    col.append(h3);
+    //    AGGIUNTE CLASSI AGLI ELEMENTI CREATI
+    row.classList.add("row");
+    flexbox.classList.add("d-flex", "justify-content-center", "align-items-center");
+
+    //    ORGANIZZATO GLI ELEMENTI
+    flexbox.append(h3);
+    col.append(flexbox);
     row.append(col);
     box.append(row);
 
-    let prova = document.querySelector(".row div");
-    let a = (i * 3);
+    //    COLORE DI DEFAULT PER CELLE
+    let bgColor = "standard-color";
 
-
-
-
-
+    //    STYLE PER CELLE SPECIALI
     if (i % 3 === 0) {
         h3.textContent = ("Fizz");
-        /*prova.style.backgroundColor = ("#0bd6a1");*/
+        bgColor = "blue";
     }
     if (i % 5 === 0) {
         h3.textContent = ("Buzz");
-
-
+        bgColor = "yellow";
     }
     if ((i % 3 === 0) && (i % 5 === 0)) {
         h3.textContent = ("FizzBuzz");
-        /*prova.style.backgroundColor = ("#f0466f");*/
-
+        bgColor = "red";
     }
 
+    col.classList.add("col-7", "ratio", "ratio-1x1", "my_border", bgColor /* "d-flex", "justify-content-center", "align-items-middle" */);
 
 
 
