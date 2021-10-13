@@ -38,7 +38,7 @@ for (let i = 1; i <= 100; i++) {
         bgColor = "red";
     }
 
-    col.classList.add("col-7", "ratio", "ratio-1x1", "my_border", bgColor /* "d-flex", "justify-content-center", "align-items-middle" */);
+    col.classList.add("my_col", "ratio", "ratio-1x1", "my_border", bgColor /* "d-flex", "justify-content-center", "align-items-middle" */);
 
 
 

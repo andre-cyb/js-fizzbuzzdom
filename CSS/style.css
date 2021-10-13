@@ -1,7 +1,7 @@
 .my_border{
     border: 15px solid #083b4c;
 }
-.col-7{
+.my_col{
     width: calc((100% / 7) * 1);
 }
 .primary{
